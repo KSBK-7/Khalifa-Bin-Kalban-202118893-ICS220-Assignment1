@@ -252,7 +252,7 @@ payment1 = Payment(3001, "Credit Card", 1500.00, "Processed", "2024-10-10", "REF
 payment1.process_payment()
 payment1.send_payment_confirmation()
 
-# Display final details
+
 # Display final details
 print("Guest:", guest1.get_name(), "Email:", guest1.get_email(), "Phone:", guest1.get_phone_number(), "Nationality:", guest1.get_nationality())
 print("Reservation ID:", reservation1.get_reservation_id(), "Room Number:", reservation1.get_room_number(), "Check-in Date:", reservation1.get_check_in_date(), "Check-out Date:", reservation1.get_check_out_date(), "Total Amount:", reservation1.get_total_amount(), "Status:", reservation1.get_status())
