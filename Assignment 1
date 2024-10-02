@@ -1,0 +1,260 @@
+# Guest Class
+class Guest:
+    def __init__(self, name, email, phone_number, address, nationality, date_of_birth):
+        # Initialize guest attributes
+        self.name = name  # Guest's name
+        self.email = email  # Guest's email
+        self.phone_number = phone_number  # Guest's phone number
+        self.address = address  # Guest's address
+        self.nationality = nationality  # Guest's nationality
+        self.date_of_birth = date_of_birth  # Guest's date of birth
+
+    # Getter and Setter methods
+    def get_name(self):
+        return self.name
+
+    def set_name(self, name):
+        self.name = name
+
+    def get_email(self):
+        return self.email
+
+    def set_email(self, email):
+        self.email = email
+
+    def get_phone_number(self):
+        return self.phone_number
+
+    def set_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def get_address(self):
+        return self.address
+
+    def set_address(self, address):
+        self.address = address
+
+    def get_nationality(self):
+        return self.nationality
+
+    def set_nationality(self, nationality):
+        self.nationality = nationality
+
+    def get_date_of_birth(self):
+        return self.date_of_birth
+
+    def set_date_of_birth(self, date_of_birth):
+        self.date_of_birth = date_of_birth
+
+    # Function to make a reservation
+    def make_reservation(self):
+        print(f"{self.name} has made a reservation.")
+
+    # Function to cancel a reservation
+    def cancel_reservation(self):
+        print(f"{self.name} has canceled the reservation.")
+
+    # Function to check in
+    def check_in(self):
+        print(f"{self.name} has checked in.")
+
+    # Function to check out
+    def check_out(self):
+        print(f"{self.name} has checked out.")
+
+
+# Reservation Class
+class Reservation:
+    def __init__(self, reservation_id, room_number, check_in_date, check_out_date, total_amount, status):
+        # Initialize reservation attributes
+        self.reservation_id = reservation_id
+        self.room_number = room_number
+        self.check_in_date = check_in_date
+        self.check_out_date = check_out_date
+        self.total_amount = total_amount
+        self.status = status
+
+    # Getter and Setter methods
+    def get_reservation_id(self):
+        return self.reservation_id
+
+    def set_reservation_id(self, reservation_id):
+        self.reservation_id = reservation_id
+
+    def get_room_number(self):
+        return self.room_number
+
+    def set_room_number(self, room_number):
+        self.room_number = room_number
+
+    def get_check_in_date(self):
+        return self.check_in_date
+
+    def set_check_in_date(self, check_in_date):
+        self.check_in_date = check_in_date
+
+    def get_check_out_date(self):
+        return self.check_out_date
+
+    def set_check_out_date(self, check_out_date):
+        self.check_out_date = check_out_date
+
+    def get_total_amount(self):
+        return self.total_amount
+
+    def set_total_amount(self, total_amount):
+        self.total_amount = total_amount
+
+    def get_status(self):
+        return self.status
+
+    def set_status(self, status):
+        self.status = status
+
+    # Function to modify a reservation
+    def modify_reservation(self):
+        print("Reservation modified.")
+
+    # Function to send confirmation
+    def send_confirmation(self):
+        print("Confirmation sent for the reservation.")
+
+
+# Invoice Class
+class Invoice:
+    def __init__(self, invoice_id, guest_name, total_amount, tax, date_issued, due_date):
+        # Initialize invoice attributes
+        self.invoice_id = invoice_id
+        self.guest_name = guest_name
+        self.total_amount = total_amount
+        self.tax = tax
+        self.date_issued = date_issued
+        self.due_date = due_date
+
+    # Getter and Setter methods
+    def get_invoice_id(self):
+        return self.invoice_id
+
+    def set_invoice_id(self, invoice_id):
+        self.invoice_id = invoice_id
+
+    def get_guest_name(self):
+        return self.guest_name
+
+    def set_guest_name(self, guest_name):
+        self.guest_name = guest_name
+
+    def get_total_amount(self):
+        return self.total_amount
+
+    def set_total_amount(self, total_amount):
+        self.total_amount = total_amount
+
+    def get_tax(self):
+        return self.tax
+
+    def set_tax(self, tax):
+        self.tax = tax
+
+    def get_date_issued(self):
+        return self.date_issued
+
+    def set_date_issued(self, date_issued):
+        self.date_issued = date_issued
+
+    def get_due_date(self):
+        return self.due_date
+
+    def set_due_date(self, due_date):
+        self.due_date = due_date
+
+    # Function to generate the invoice
+    def generate_invoice(self):
+        print(f"Invoice {self.invoice_id} generated for {self.guest_name}.")
+
+    # Function to print the invoice
+    def print_invoice(self):
+        print(f"Invoice {self.invoice_id} printed.")
+
+
+# Payment Class
+class Payment:
+    def __init__(self, payment_id, payment_method, amount_paid, status, transaction_date, reference_number):
+        # Initialize payment attributes
+        self.payment_id = payment_id
+        self.payment_method = payment_method
+        self.amount_paid = amount_paid
+        self.status = status
+        self.transaction_date = transaction_date
+        self.reference_number = reference_number
+
+    # Getter and Setter methods
+    def get_payment_id(self):
+        return self.payment_id
+
+    def set_payment_id(self, payment_id):
+        self.payment_id = payment_id
+
+    def get_payment_method(self):
+        return self.payment_method
+
+    def set_payment_method(self, payment_method):
+        self.payment_method = payment_method
+
+    def get_amount_paid(self):
+        return self.amount_paid
+
+    def set_amount_paid(self, amount_paid):
+        self.amount_paid = amount_paid
+
+    def get_status(self):
+        return self.status
+
+    def set_status(self, status):
+        self.status = status
+
+    def get_transaction_date(self):
+        return self.transaction_date
+
+    def set_transaction_date(self, transaction_date):
+        self.transaction_date = transaction_date
+
+    def get_reference_number(self):
+        return self.reference_number
+
+    def set_reference_number(self, reference_number):
+        self.reference_number = reference_number
+
+    # Function to process the payment
+    def process_payment(self):
+        print(f"Payment {self.payment_id} processed.")
+
+    # Function to send payment confirmation
+    def send_payment_confirmation(self):
+        print("Payment confirmation sent.")
+
+
+# Create Guest Object
+guest1 = Guest("Khalifa Salem", "khalifa@outlook.com", "0509987543", "al kassar St", "UAE", "2003-03-18")
+guest1.make_reservation()
+
+# Create Reservation Object
+reservation1 = Reservation(1003, 305, "2024-10-10", "2024-10-15", 1500.00, "Confirmed")
+reservation1.send_confirmation()
+
+# Create Invoice Object
+invoice1 = Invoice(2003, "Khalifa Salem", 1500.00, 75.00, "2024-10-10", "2024-10-15")
+invoice1.generate_invoice()
+invoice1.print_invoice()
+
+# Create Payment Object
+payment1 = Payment(3001, "Credit Card", 1500.00, "Processed", "2024-10-10", "REF123456")
+payment1.process_payment()
+payment1.send_payment_confirmation()
+
+# Display final details
+# Display final details
+print("Guest:", guest1.get_name(), "Email:", guest1.get_email(), "Phone:", guest1.get_phone_number(), "Nationality:", guest1.get_nationality())
+print("Reservation ID:", reservation1.get_reservation_id(), "Room Number:", reservation1.get_room_number(), "Check-in Date:", reservation1.get_check_in_date(), "Check-out Date:", reservation1.get_check_out_date(), "Total Amount:", reservation1.get_total_amount(), "Status:", reservation1.get_status())
+print("Invoice ID:", invoice1.get_invoice_id(), "Guest:", invoice1.get_guest_name(), "Total Amount:", invoice1.get_total_amount(), "Tax:", invoice1.get_tax(), "Date Issued:", invoice1.get_date_issued(), "Due Date:", invoice1.get_due_date())
+print("Payment ID:", payment1.get_payment_id(), "Payment Method:", payment1.get_payment_method(), "Amount Paid:", payment1.get_amount_paid(), "Status:", payment1.get_status(), "Transaction Date:", payment1.get_transaction_date(), "Reference Number:", payment1.get_reference_number())
